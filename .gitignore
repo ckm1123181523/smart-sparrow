@@ -1,0 +1,14 @@
+target/
+**/target/
+*.log
+*.mark
+
+# JetBrains IDEs
+*.iml
+.idea/
+.DS_Store
+
+# eclipse
+.project
+.classpath
+.settings/
