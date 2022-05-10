@@ -1,6 +1,7 @@
 package com.jtfr.config;
 
 import com.jtfr.filter.LogbackRequestLoggingFilter;
+import com.jtfr.filter.ParameterWrapperFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,4 +17,9 @@ public class FilterConfig {
         return logbackRequestLoggingFilter;
     }
 
+    @Bean(name = "parameterWrapperFilter")
+    public ParameterWrapperFilter parameterWrapperFilter() {
+        ParameterWrapperFilter parameterWrapperFilter = new ParameterWrapperFilter();
+        return parameterWrapperFilter;
+    }
 }

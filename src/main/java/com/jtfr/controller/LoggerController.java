@@ -1,10 +1,10 @@
 package com.jtfr.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.jtfr.pojo.LoggerEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/logger")
@@ -13,12 +13,19 @@ public class LoggerController {
     private static Logger LOGGER = LoggerFactory.getLogger(LoggerController.class);
 
     @GetMapping("/get")
-    public String get(){
-        LOGGER.info("trace get");
-        LOGGER.info("debug get");
+    public String get(@RequestParam String ok){
+        LOGGER.info("ok = {}", ok);
+        LOGGER.trace("trace get");
+        LOGGER.debug("debug get");
         LOGGER.info("info get");
-        LOGGER.info("warning get");
-        LOGGER.info("error get");
+        LOGGER.warn("warn get");
+        LOGGER.error("error get");
         return "LoggerController.test()";
+    }
+
+    @PostMapping("/post")
+    public String post(LoggerEntity loggerEntity){
+        LOGGER.info(JSON.toJSONString(loggerEntity));
+        return "LoggerController.post()";
     }
 }
