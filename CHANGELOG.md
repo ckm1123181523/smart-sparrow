@@ -13,6 +13,13 @@
 
 更新记录
 ===============
+1.2.1
+----------------
+- deployVersion: 1.2.1
+- date: 20220510
+- author： chenkangming
+- desc:
+  1. Slf4j 的 MDC 存储 RequestId，一个线程的完整请求日志，可以使用 RequestId 进行过滤。
 
 1.2.0
 ----------------
@@ -21,8 +28,7 @@
 - author： chenkangming
 - desc:
   1. 使用 logback 打印日志。
-
-
+  
 1.1.0
 ----------------
 - deployVersion: 1.1.0
