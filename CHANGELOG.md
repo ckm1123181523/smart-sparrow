@@ -14,6 +14,14 @@
 更新记录
 ===============
 
+1.1.0
+----------------
+- deployVersion: 1.1.0
+- date: 20220510
+- author： chenkangming
+- desc:
+  1. 引入 SpringBoot、Spring支持Post、get 请求。
+
 1.0.0
 ----------------
 - deployVersion: 1.0.0
