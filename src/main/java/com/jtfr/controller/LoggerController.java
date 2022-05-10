@@ -20,7 +20,17 @@ public class LoggerController {
         LOGGER.info("info get");
         LOGGER.warn("warn get");
         LOGGER.error("error get");
-        return "LoggerController.test()";
+        return "LoggerController.get()";
+    }
+
+    @GetMapping("/get2")
+    public String get(){
+        LOGGER.trace("trace get");
+        LOGGER.debug("debug get");
+        LOGGER.info("info get");
+        LOGGER.warn("warn get");
+        LOGGER.error("error get");
+        return "LoggerController.get2()";
     }
 
     @PostMapping("/post")

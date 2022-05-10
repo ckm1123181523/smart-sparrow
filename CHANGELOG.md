@@ -13,6 +13,14 @@
 
 更新记录
 ===============
+1.2.3
+----------------
+- deployVersion: 1.2.3
+- date: 20220510
+- author： chenkangming
+- desc:
+  1. 打印出参
+
 1.2.2
 ----------------
 - deployVersion: 1.2.2

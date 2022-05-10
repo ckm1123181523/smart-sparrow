@@ -1,2 +1,7 @@
 server:
   port: 8081
+
+spring:
+  aop:
+    auto: true # 默认 true：开启 @EnableAspectJAutoProxy
+    proxy-target-class: true # 默认 true 使用 CGLIB
